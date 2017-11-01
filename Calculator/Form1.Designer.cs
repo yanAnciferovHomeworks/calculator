@@ -63,6 +63,7 @@
             this.Button0.TabIndex = 0;
             this.Button0.Text = "0";
             this.Button0.UseVisualStyleBackColor = true;
+            this.Button0.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonOne
             // 
@@ -73,6 +74,7 @@
             this.ButtonOne.TabIndex = 1;
             this.ButtonOne.Text = "1";
             this.ButtonOne.UseVisualStyleBackColor = true;
+            this.ButtonOne.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonFoure
             // 
@@ -83,6 +85,7 @@
             this.ButtonFoure.TabIndex = 2;
             this.ButtonFoure.Text = "4";
             this.ButtonFoure.UseVisualStyleBackColor = true;
+            this.ButtonFoure.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonFive
             // 
@@ -93,6 +96,7 @@
             this.ButtonFive.TabIndex = 5;
             this.ButtonFive.Text = "5";
             this.ButtonFive.UseVisualStyleBackColor = true;
+            this.ButtonFive.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonTwo
             // 
@@ -103,6 +107,7 @@
             this.ButtonTwo.TabIndex = 4;
             this.ButtonTwo.Text = "2";
             this.ButtonTwo.UseVisualStyleBackColor = true;
+            this.ButtonTwo.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonSix
             // 
@@ -113,6 +118,7 @@
             this.ButtonSix.TabIndex = 8;
             this.ButtonSix.Text = "6";
             this.ButtonSix.UseVisualStyleBackColor = true;
+            this.ButtonSix.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonThree
             // 
@@ -123,6 +129,7 @@
             this.ButtonThree.TabIndex = 7;
             this.ButtonThree.Text = "3";
             this.ButtonThree.UseVisualStyleBackColor = true;
+            this.ButtonThree.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonDot
             // 
@@ -133,6 +140,7 @@
             this.ButtonDot.TabIndex = 6;
             this.ButtonDot.Text = ",";
             this.ButtonDot.UseVisualStyleBackColor = true;
+            this.ButtonDot.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonMultiply
             // 
@@ -217,6 +225,7 @@
             this.ButtonNine.TabIndex = 17;
             this.ButtonNine.Text = "9";
             this.ButtonNine.UseVisualStyleBackColor = true;
+            this.ButtonNine.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonEight
             // 
@@ -227,6 +236,7 @@
             this.ButtonEight.TabIndex = 16;
             this.ButtonEight.Text = "8";
             this.ButtonEight.UseVisualStyleBackColor = true;
+            this.ButtonEight.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonSeven
             // 
@@ -237,6 +247,7 @@
             this.ButtonSeven.TabIndex = 15;
             this.ButtonSeven.Text = "7";
             this.ButtonSeven.UseVisualStyleBackColor = true;
+            this.ButtonSeven.Click += new System.EventHandler(this.ButtonNum_Click);
             // 
             // ButtonSqrt
             // 
@@ -277,6 +288,7 @@
             this.button22.TabIndex = 21;
             this.button22.Text = "CE";
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // ButtonDelete
             // 
@@ -287,12 +299,14 @@
             this.ButtonDelete.TabIndex = 20;
             this.ButtonDelete.Text = "←";
             this.ButtonDelete.UseVisualStyleBackColor = true;
+            this.ButtonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
             // Table
             // 
             this.Table.Location = new System.Drawing.Point(12, 27);
             this.Table.Multiline = true;
             this.Table.Name = "Table";
+            this.Table.ReadOnly = true;
             this.Table.Size = new System.Drawing.Size(304, 70);
             this.Table.TabIndex = 25;
             // 

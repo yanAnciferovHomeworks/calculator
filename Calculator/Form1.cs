@@ -22,10 +22,10 @@ namespace Calculator
 {
     public partial class Calc : Form
     {
-        int? number1 = null;
-        int? number2 = null;
-        int? result = null;
-        Doing doing;
+        int? number1_ = null;
+        int? number2_ = null;
+        int? result_ = null;
+        ICalculate calculate_;
 
 
 
@@ -38,22 +38,41 @@ namespace Calculator
 
         private void ButtonPlus_Click(object sender, EventArgs e)
         {
-            doing = Doing.Plus;
+            calculate_ = new Plus();
         }
 
         private void ButtonMinus_Click(object sender, EventArgs e)
         {
-            doing = Doing.Minus;
+            calculate_ = new Minus();
         }
 
         private void ButtonMultiply_Click(object sender, EventArgs e)
         {
-            doing = Doing.Multyple;
+            calculate_ = new Multiply();
         }
 
         private void ButtonDegree_Click(object sender, EventArgs e)
         {
-            doing = Doing.Degree;
+            calculate_ = new Degree();
+        }
+
+        private void ButtonNum_Click(object sender, EventArgs e)
+        {
+            Table.Text += (sender as Button).Text;
+        }
+
+        private void ButtonDelete_Click(object sender, EventArgs e)
+        {
+            StringBuilder TText = new StringBuilder(Table.Text);
+            TText.Remove(TText.Length - 1, 1);
+            Table.Text = TText.ToString();
+        }
+
+        private void button22_Click(object sender, EventArgs e)
+        {
+            number1_ = null;
+            number2_ = null;
+            Table.Text = "";
         }
     }
 }
