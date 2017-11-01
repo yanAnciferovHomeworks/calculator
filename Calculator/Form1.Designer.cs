@@ -39,7 +39,7 @@
             this.ButtonMultiply = new System.Windows.Forms.Button();
             this.ButtonMinus = new System.Windows.Forms.Button();
             this.ButtonPlus = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
+            this.ButtonFraction = new System.Windows.Forms.Button();
             this.ButtonEquels = new System.Windows.Forms.Button();
             this.ButtonPercent = new System.Windows.Forms.Button();
             this.ButtonDegree = new System.Windows.Forms.Button();
@@ -175,15 +175,16 @@
             this.ButtonPlus.UseVisualStyleBackColor = true;
             this.ButtonPlus.Click += new System.EventHandler(this.ButtonPlus_Click);
             // 
-            // button13
+            // ButtonFraction
             // 
-            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.button13.Location = new System.Drawing.Point(260, 229);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(56, 50);
-            this.button13.TabIndex = 14;
-            this.button13.Text = "1/x";
-            this.button13.UseVisualStyleBackColor = true;
+            this.ButtonFraction.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.ButtonFraction.Location = new System.Drawing.Point(260, 229);
+            this.ButtonFraction.Name = "ButtonFraction";
+            this.ButtonFraction.Size = new System.Drawing.Size(56, 50);
+            this.ButtonFraction.TabIndex = 14;
+            this.ButtonFraction.Text = "1/x";
+            this.ButtonFraction.UseVisualStyleBackColor = true;
+            this.ButtonFraction.Click += new System.EventHandler(this.ButtonFraction_Click);
             // 
             // ButtonEquels
             // 
@@ -258,6 +259,7 @@
             this.ButtonSqrt.TabIndex = 24;
             this.ButtonSqrt.Text = "√";
             this.ButtonSqrt.UseVisualStyleBackColor = true;
+            this.ButtonSqrt.Click += new System.EventHandler(this.ButtonSqrt_Click);
             // 
             // ButtonInverse
             // 
@@ -268,6 +270,7 @@
             this.ButtonInverse.TabIndex = 23;
             this.ButtonInverse.Text = "±";
             this.ButtonInverse.UseVisualStyleBackColor = true;
+            this.ButtonInverse.Click += new System.EventHandler(this.ButtonInverse_Click);
             // 
             // ButtonClear
             // 
@@ -278,6 +281,7 @@
             this.ButtonClear.TabIndex = 22;
             this.ButtonClear.Text = "C";
             this.ButtonClear.UseVisualStyleBackColor = true;
+            this.ButtonClear.Click += new System.EventHandler(this.ButtonClearC_Click);
             // 
             // button22
             // 
@@ -288,7 +292,7 @@
             this.button22.TabIndex = 21;
             this.button22.Text = "CE";
             this.button22.UseVisualStyleBackColor = true;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
+            this.button22.Click += new System.EventHandler(this.ButtonClearCE_Click);
             // 
             // ButtonDelete
             // 
@@ -303,12 +307,14 @@
             // 
             // Table
             // 
+            this.Table.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.Table.Location = new System.Drawing.Point(12, 27);
             this.Table.Multiline = true;
             this.Table.Name = "Table";
             this.Table.ReadOnly = true;
             this.Table.Size = new System.Drawing.Size(304, 70);
             this.Table.TabIndex = 25;
+            this.Table.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Calc
             // 
@@ -326,7 +332,7 @@
             this.Controls.Add(this.ButtonNine);
             this.Controls.Add(this.ButtonEight);
             this.Controls.Add(this.ButtonSeven);
-            this.Controls.Add(this.button13);
+            this.Controls.Add(this.ButtonFraction);
             this.Controls.Add(this.ButtonEquels);
             this.Controls.Add(this.ButtonMultiply);
             this.Controls.Add(this.ButtonMinus);
@@ -339,6 +345,7 @@
             this.Controls.Add(this.ButtonFoure);
             this.Controls.Add(this.ButtonOne);
             this.Controls.Add(this.Button0);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Calc";
             this.Text = "Калькулятор";
@@ -360,7 +367,7 @@
         private System.Windows.Forms.Button ButtonMultiply;
         private System.Windows.Forms.Button ButtonMinus;
         private System.Windows.Forms.Button ButtonPlus;
-        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button ButtonFraction;
         private System.Windows.Forms.Button ButtonEquels;
         private System.Windows.Forms.Button ButtonPercent;
         private System.Windows.Forms.Button ButtonDegree;
