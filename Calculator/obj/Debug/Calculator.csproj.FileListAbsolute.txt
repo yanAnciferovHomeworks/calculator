@@ -7,3 +7,13 @@ c:\users\anci_oq88\documents\visual studio 2013\Projects\Calculator\Calculator\b
 c:\users\anci_oq88\documents\visual studio 2013\Projects\Calculator\Calculator\obj\Debug\Calculator.exe
 c:\users\anci_oq88\documents\visual studio 2013\Projects\Calculator\Calculator\obj\Debug\Calculator.pdb
 c:\users\anci_oq88\documents\visual studio 2013\Projects\Calculator\Calculator\obj\Debug\Calculator.Calc.resources
+C:\Users\Yan\Desktop\Новая папка\calculator\Calculator\bin\Debug\Calculator.exe.config
+C:\Users\Yan\Desktop\Новая папка\calculator\Calculator\bin\Debug\Calculator.exe
+C:\Users\Yan\Desktop\Новая папка\calculator\Calculator\bin\Debug\Calculator.pdb
+C:\Users\Yan\Desktop\Новая папка\calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Yan\Desktop\Новая папка\calculator\Calculator\obj\Debug\Calculator.Calc.resources
+C:\Users\Yan\Desktop\Новая папка\calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+C:\Users\Yan\Desktop\Новая папка\calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.Cache
+C:\Users\Yan\Desktop\Новая папка\calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Yan\Desktop\Новая папка\calculator\Calculator\obj\Debug\Calculator.exe
+C:\Users\Yan\Desktop\Новая папка\calculator\Calculator\obj\Debug\Calculator.pdb
