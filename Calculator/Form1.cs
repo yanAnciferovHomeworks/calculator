@@ -25,6 +25,7 @@ namespace Calculator
         double? number1_ = null;
         double? number2_ = null;
         bool isShowResult = true;
+        double? memory = null;
         ICalculate calculate_;
 
 
@@ -183,6 +184,51 @@ namespace Calculator
                 isShowResult = false;
             }
             ButtonNum_Click(sender, e);
+        }
+
+        private void buttonMS_Click(object sender, EventArgs e)
+        {
+            if (Table.Text != "")
+            {
+                memory = double.Parse(Table.Text);
+                MActive.Visible = true;
+                buttonMC.Enabled = true;
+                buttonMR.Enabled = true;
+                
+            }
+
+           
+        }
+
+        private void buttonMC_Click(object sender, EventArgs e)
+        {
+            memory = null;
+            MActive.Visible = false;
+            buttonMC.Enabled = false;
+            buttonMR.Enabled = false;
+        }
+
+        private void buttonMR_Click(object sender, EventArgs e)
+        {
+            if (memory != null)
+            {
+                Table.Text = memory.ToString();
+            }
+           
+        }
+
+        private void buttonMPlus_Click(object sender, EventArgs e)
+        {
+            if(memory != null)
+                memory += double.Parse(Table.Text);
+            else buttonMS_Click(sender, e);
+        }
+
+        private void buttonMMinus_Click(object sender, EventArgs e)
+        {
+            if (memory != null)
+                memory -= double.Parse(Table.Text);
+            else buttonMS_Click(sender, e);
         }
     }
 }
