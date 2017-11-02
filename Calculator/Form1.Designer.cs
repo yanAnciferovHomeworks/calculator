@@ -442,6 +442,7 @@
             this.MaximizeBox = false;
             this.Name = "Calc";
             this.Text = "Калькулятор";
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Calc_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 
